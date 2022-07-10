@@ -1,12 +1,14 @@
+from model.Board import Board
+
 class BoardService:
 
-    def __init__(self, board, snakes, ladders):
-        self.board = board
-        self.pBoard = board.pBoard
-        self.snakeKey = board.snakeKey
-        self.ladderKey = board.ladderKey
-        self.startPosition = board.start
-        self.endPosition = board.end
+    def __init__(self, boardSize, snakes, ladders):
+        self.board = Board(boardSize)
+        self.pBoard = self.board.pBoard
+        self.snakeKey = self.board.snakeKey
+        self.ladderKey = self.board.ladderKey
+        self.startPosition = self.board.start
+        self.endPosition = self.board.end
         self.snakes = snakes
         self.ladders = ladders
 
