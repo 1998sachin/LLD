@@ -3,15 +3,15 @@
 # Press ⌃R to execute it or replace it with your code.
 # Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
 from sys import stdin
-from model.Snake import Snake
-from model.Ladder import Ladder
-from model.Board import Board
-from model.Dice import Dice
-from model.Player import Player
+from SnakeAndLadder.model.Snake import Snake
+from SnakeAndLadder.model.Ladder import Ladder
+from SnakeAndLadder.model.Board import Board
+from SnakeAndLadder.model.Dice import Dice
+from SnakeAndLadder.model.Player import Player
 
-from service.BoardService import BoardService
-from service.DiceService import DiceService
-from service.GameService import GameService
+from SnakeAndLadder.service.BoardService import BoardService
+from SnakeAndLadder.service.DiceService import DiceService
+from SnakeAndLadder.service.GameService import GameService
 
 BOARD_SIZE = 100
 DICE_SIZE = 6
